@@ -1,0 +1,69 @@
+body{
+	background-image:  url("../images/crystals-bg.jpg");
+	background-repeat: no-repeat;
+	background-position: cover;
+	font-family: 'Limelight','Aldrich', sans-serif;
+	font-size: 30px;
+	font-weight: bold;
+	color: #3D5229;
+}
+
+#header{
+	height: 80px;
+	background-color: #679267;
+	text-align: center;
+	font-size: 40px;
+	padding-top: 15px;
+	border-bottom: 4px solid #2F4F2F;
+}
+
+#message{
+	display: none;
+}
+
+#wrapper{
+	background-color: #679267;
+	border: 2px solid black;
+    border-radius: 25px;
+	margin: 0 auto;
+	height: 400px;
+	width: 500px;
+	padding: 20px;
+}
+
+#instructions{
+	margin-top: 30px;
+	font-size: 20px;
+	line-height: : 1.2;
+	background-color: #679267;
+	width: 500px;
+	padding : 10px;
+	border-radius: 25px;	
+
+}
+
+.btn{
+	color: #3D5229;
+}
+#footer {
+    position: fixed;
+    height: 50px;
+    text-align: center;
+    bottom: 0;
+    width: 100%;
+    font-size: 10px;
+    background-color: #679267;
+    border-top: 1px solid #2F4F2F;
+
+}
+
+#flip{
+	text-align: center;
+	text-decoration: none;
+	color: #3D5229;
+}
+
+.buttonImg{
+	width: 100px;
+	height: 100px;
+}

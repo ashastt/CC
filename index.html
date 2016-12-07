@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+	<title>Crystals Collector</title>
+	 <!-- Added link to the jQuery Library -->
+<script src="https://code.jquery.com/jquery-2.2.3.js" integrity="sha256-laXWtGydpwqJ8JA+X9x2miwmaiKhn8tVmOVEigRNtP4=" crossorigin="anonymous"></script>
+
+<script type="text/javascript" src="assets/javascript/game.js"></script>
+
+  <!-- Added a link to Bootstrap-->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+<link href="https://fonts.googleapis.com/css?family=Aldrich|Limelight" rel="stylesheet">
+<!-- <link rel="stylesheet" type="text/css" href="assets/css/reset.css"> -->
+<link rel="stylesheet" type="text/css" href="assets/css/style.css">
+</head>
+<body>
+
+
+<!-- <nav class="navbar navbar-inverse navbar-fixed-top" > --> 
+  <div class="container-fluid" id="header" >
+    <!-- <div class="navbar-header text-center" >  -->
+      Crystal Collector
+    <!-- </div>  -->
+  </div>
+ <!-- </nav>  -->
+
+<div class = "container" id = "instructions">
+<div class="row">
+		<div class="col-md-12">			
+			<div id = "message"> 
+				<p>You are given a random number at the start of the game.</p>
+				<p>There are four crystals below. By clicking on a crystal, you will add a specific amount of points to your total score.</p>
+				<p>You win the game by matching your total score to a random number. You lose the game if your total score surpasses the random number.</p>
+				<p>The value of each crystal is hidden from you until you click on it.</p>
+				<p>The value of the crystals will change after each game. </p>
+			</div>
+
+			<div id ="flip">
+				<button class= "btn btn-link">Click/Close for Instructions</button>
+			</div>
+		</div>
+	</div>
+</div>
+
+
+<div class="container" id="wrapper">
+    <div class = "row">
+    	<div class="col-md-12 text-center">
+    		<label> Target Number </label>
+			<div id = "targetNumber"></div>
+		</div>	
+	</div>
+
+	<div class="row text-center" id="gemsWrapper">
+		<div class="col-md-3">
+			<input type="image" src="assets/images/gem1.jpeg" id= "gem0" class="buttonImg"/>
+		</div>	
+		<div class="col-md-3">	
+			<input type="image" src="assets/images/gem2.jpeg" id= "gem1" class="buttonImg"/>
+		</div>	
+		<div class="col-md-3">	
+			<input type="image" src="assets/images/gem3.jpeg" id= "gem2" class="buttonImg"/>
+		</div>	
+		<div class="col-md-3">	
+			<input type="image" src="assets/images/gem4.jpeg" id= "gem3" class="buttonImg"/>
+		</div>
+	</div>
+
+	<div class = "row">
+		<div class="col-md-12 text-center">
+			<label>Total Score is </label>
+    		<div id = "resultSum">0</div>
+    	</div>	
+    </div>
+
+	<div class = "row text-center">
+		<div class = "col-md-6">
+			<label> Wins </label>
+			<div id = "win">0</div>
+		</div>
+		<div class = "col-md-6">
+			<label> Losses </label>
+			<div id = "loss">0</div>
+		</div>
+	</div>
+</div>
+
+<div id="footer">
+	copyright Asha
+</div>
+
+
+
+</body>
+</html>
